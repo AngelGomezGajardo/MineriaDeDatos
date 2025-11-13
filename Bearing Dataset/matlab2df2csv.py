@@ -27,6 +27,8 @@ print(RPM)
 n=len(DE)
 
 #generamos el dataframe df
+#lo que sigue es pandas: lo que hace es tomar el vector y ponerlo como columna, para el valor unitario RPM hace un
+# broadcasting, replica lo mismo en todas las columnas
 df = pd.DataFrame({
     "sample": np.arange(n),
     "vib_DE": DE,

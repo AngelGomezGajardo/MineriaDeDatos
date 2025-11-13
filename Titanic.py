@@ -7,12 +7,29 @@
 #   optimizacion y validación
 #   despliegue o interpretacion de resultados
 
+# Cargamos un dataset público: pasajeros del Titanic.
+# # Limpieza de datos: eliminamos valores nulos y variables irrelevantes.
+# # Codificación: convertimos texto (“male”, “female”) en números.
+# # Separación de variables:
+# # X = características (edad, sexo, clase, tarifa, etc.)
+# # y = etiqueta objetivo (survived).
+# # Entrenamiento: usamos los datos de entrenamiento para que el modelo aprenda.
+# # Evaluación: probamos si el modelo predice correctamente sobre datos nuevos.
+# # En esencia, el modelo aprende que:
+# # Ser mujer → mayor probabilidad de sobrevivir.
+# # Estar en clase alta → mayor probabilidad.
+# # Ser joven → mayor probabilidad.
+# # Y combina todos esos factores estadísticamente para predecir.
+
+# El ejercicio del Titanic = clasificación supervisada dentro de machine learning,
+# que a su vez = una de las principales técnicas de minería de datos.
+
 import seaborn as sns
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
-import matplotlib.pyplot as plt
+
 
 # Dataset público incluido en Seaborn
 df = sns.load_dataset('titanic')

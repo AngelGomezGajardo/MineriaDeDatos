@@ -1,0 +1,1 @@
+los datos descargados son SINTETICOS, no sirven para realizar mineria de datos.
